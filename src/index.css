@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.particles {
+  z-index: -1;
+  position: absolute;
+}
+.app-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Navbar */
+.navbar-brand {
+  color: #00c7ff !important;
+  font-weight: 700;
+  font-size: 25px !important;
+}
+.nav-link {
+  color: gray !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+}
+.nav-link:hover {
+  color: #00c7ff !important;
+}
+.active {
+  color: #00c7ff !important;
+}
+.fa-bars {
+  color: #fff;
+}
+
+/* End of Navbar */
+
+/* Hero */
+.hero-container {
+  color: #fff;
+  display: flex;
+}
+
+.hero-container h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.hero-container h1 span {
+  color: #00c7ff;
+}
+.hero-container p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.btn-primary {
+  background-color: #eef2ff !important;
+  padding: 15px !important;
+  color: gray !important;
+  border: none !important;
+}
+.fa-download {
+  margin-right: 10px;
+}
+.btn-primary:hover {
+  background-color: #00224d !important;
+  color: #fff !important;
+}
+/* End of Hero */
+
+/* Project */
+.project-links {
+  width: fit-content !important;
+  margin: 0 !important;
+}
+.project-links a i {
+  text-decoration: none !important;
+  color: #00c7ff;
+}
+.fa-link,
+.fa-github-alt {
+  font-size: 24px;
+}
+.fa-link:hover,
+.fa-github-alt:hover {
+  color: #eef2ff;
+}
+.card-title {
+  margin: 0 !important;
+  font-weight: 700 !important;
+}
+.card-text {
+  color: gray !important;
+  font-size: 14px !important;
+  margin-top: 10px;
+}
+.card-header {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.card {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.techUse {
+  padding: 8px 14px;
+  width: fit-content !important;
+  text-align: center;
+  background-color: #192742;
+  border-radius: 99px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.techUse:hover {
+  background-color: rgba(63, 60, 60, 0.719);
+  cursor: pointer;
+}
+hr {
+  height: 8px;
+  background-color: #00c7ff;
+  border: none;
+  color: #00c7ff;
+  opacity: 1 !important;
+}
+.fa-code {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  transform: rotate(15deg); /* Adjust the angle as needed */
+  font-size: 2.5rem; /* Adjust size as needed */
+  color: #00c7ff; /* Matching the color of the title */
+}
+
+.projectTitle h1 {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 4rem;
+}
+.projectTitle p {
+  text-align: center;
+  color: gray;
+  font-size: 1.3rem;
+}
+.toolIconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+}
+.toolIconWrapper h6 {
+  font-weight: 200;
+  margin-top: 15px !important;
+}
+.toolsIcon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.toolsUsedText h1 {
+  font-weight: 700;
+  color: #fff;
+}
+.aboutMe h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/* Footer */
+.footer-nav h5 {
+  font-weight: 700;
+  color: gray;
+}
+.footer-nav a {
+  color: #fff !important;
+  font-size: 16px !important;
+  width: fit-content;
+}
+.social-links {
+  gap: 20px;
+  font-size: 16px;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-right: 20px !important;
+}
+.socmed {
+  color: #fff !important;
+  width: fit-content !important;
+}
+.fa-github,
+.fa-linkedin-in,
+.fa-square-facebook,
+.fa-envelope {
+  font-size: 26px;
+  color: gray;
+}
+.fa-github:hover,
+.fa-linkedin-in:hover,
+.fa-square-facebook:hover,
+.fa-envelope:hover {
+  color: #00c7ff !important;
+}
+
+.socmed-wrapper {
+  display: flex !important;
+  justify-content: end;
+}
+.credits p {
+  font-size: 18px;
+  color: #fff;
+  text-align: end;
+}
+.contact-btn {
+  text-decoration: none !important;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal-content {
+  background-color: #192742 !important;
+  color: #fff !important;
+  border: 2px solid #00c7ff !important  ;
+}
+.modal-header {
+  border: none !important;
+}
+.modal-footer {
+  border: none !important;
+}
+.modal-title {
+  text-align: center !important;
+  width: 100%;
+  font-weight: 700 !important;
+}
+.form-control {
+  height: 60px;
+}
+.form-control::placeholder {
+  font-size: 20px;
+}
