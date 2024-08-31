@@ -1,7 +1,3 @@
-Here's a README file template for your portfolio project built using Vite, React, Particle.js, and EmailJS:
-
----
-
 # Portfolio Website
 
 This is a personal portfolio website showcasing my skills, projects, and experiences. The website is built using Vite with React, and it includes interactive effects with Particle.js and email functionality using EmailJS.
