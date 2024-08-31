@@ -24,7 +24,7 @@ Make sure you have Node.js and npm installed on your machine.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone git@github.com:ArnelSinadhan/ArnelDS-Portfolio.git
    cd your-repo-name
    ```
 
@@ -40,7 +40,7 @@ Make sure you have Node.js and npm installed on your machine.
    npm run dev
    ```
 
-   The website will be available at `http://localhost:3000`.
+   The website will be available at `http://localhost:5173`.
 
 ### Building for Production
 
@@ -92,5 +92,3 @@ EmailJS is integrated to send emails directly from the website. To use this feat
 - [Bootstrap](https://getbootstrap.com/)
 
 ---
-
-Feel free to customize this README to better suit your project specifics and add any other information you think is relevant.
