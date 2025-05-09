@@ -5,7 +5,7 @@ import "notyf/notyf.min.css";
 import { useRef, useState } from "react";
 import { Button, Container, Form, Modal, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import logo from "/public/logo.png";
+import logo from "/logo.png";
 
 export default function AppNavbar() {
   const formRef = useRef();
