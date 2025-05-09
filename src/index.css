@@ -14,6 +14,9 @@
 }
 
 /* Navbar */
+.logo {
+  height: 40px;
+}
 .navbar-brand {
   color: #00c7ff !important;
   font-weight: 700;

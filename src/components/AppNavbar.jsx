@@ -1,10 +1,11 @@
-import { Nav, Navbar, Container, Modal, Form, Button } from "react-bootstrap";
-import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
-import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 import { Notyf } from "notyf";
 import "notyf/notyf.min.css";
+import { useRef, useState } from "react";
+import { Button, Container, Form, Modal, Nav, Navbar } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import logo from "/public/logo.png";
 
 export default function AppNavbar() {
   const formRef = useRef();
@@ -50,7 +51,9 @@ export default function AppNavbar() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <Navbar.Brand>ArnelDS</Navbar.Brand>
+            <Navbar.Brand>
+              <img src={logo} alt="logo png" className="logo" />
+            </Navbar.Brand>
           </motion.div>
           <Navbar.Toggle>
             <i className="fa-solid fa-bars"></i>
