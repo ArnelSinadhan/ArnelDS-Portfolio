@@ -11,6 +11,7 @@ export default function AppNavbar() {
   const formRef = useRef();
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false); // Optional: for spinner or loading state
+  const [isNavOpen, setIsNavOpen] = useState(false); // Track the navbar state
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -42,9 +43,17 @@ export default function AppNavbar() {
       );
   };
 
+  // Function to close the navbar when a link is clicked
+  const handleNavLinkClick = () => {
+    if (window.innerWidth <= 992) {
+      // 992px is the breakpoint for tablet and mobile in Bootstrap
+      setIsNavOpen(false); // Close the navbar
+    }
+  };
+
   return (
     <>
-      <Navbar expand="lg" className="py-md-4">
+      <Navbar expand="lg" className="py-md-4" expanded={isNavOpen}>
         <Container className="px-md-5">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -55,25 +64,37 @@ export default function AppNavbar() {
               <img src={logo} alt="logo png" className="logo" />
             </Navbar.Brand>
           </motion.div>
-          <Navbar.Toggle>
+          <Navbar.Toggle onClick={() => setIsNavOpen(!isNavOpen)}>
             <i className="fa-solid fa-bars"></i>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto d-flex align-items-center">
               <motion.div whileTap={{ scale: 0.5 }}>
-                <NavLink className="mx-md-4 nav-link" to="/">
+                <NavLink
+                  className="mx-md-4 nav-link"
+                  to="/"
+                  onClick={handleNavLinkClick} // Close navbar when clicked
+                >
                   Home
                 </NavLink>
               </motion.div>
 
               <motion.div whileTap={{ scale: 0.5 }}>
-                <NavLink className="mx-md-4 nav-link" to="/about">
+                <NavLink
+                  className="mx-md-4 nav-link"
+                  to="/about"
+                  onClick={handleNavLinkClick} // Close navbar when clicked
+                >
                   AboutMe
                 </NavLink>
               </motion.div>
 
               <motion.div whileTap={{ scale: 0.5 }}>
-                <NavLink className="mx-md-4 nav-link" to="/project">
+                <NavLink
+                  className="mx-md-4 nav-link"
+                  to="/project"
+                  onClick={handleNavLinkClick} // Close navbar when clicked
+                >
                   Project
                 </NavLink>
               </motion.div>
