@@ -150,8 +150,16 @@ const projectsData = {
   workExp: [
     {
       id: 1,
+      workTitle: "Software Engineer",
+      companyName: "Hipe Japan Inc",
+      date: "September 2, 2024 - Present",
+      shortDescription:
+        "Developed and maintained software solutions using technologies like React, TypeScript, and Node.js, focusing on optimizing performance and enhancing user experience. Worked on backend systems, API integrations, and scalable solutions.",
+    },
+    {
+      id: 1,
       workTitle: "General Virtual Assistant",
-      companyName: "TTEC",
+      companyName: "Freelance",
       date: "November 2023 - March 2023",
       shortDescription:
         "Provided administrative support, including email management. Building HTML email and send to the customers.",
@@ -163,30 +171,6 @@ const projectsData = {
       date: "September 2021 - August 2023",
       shortDescription:
         "Provided support to customers via chat, resolving issues and answering queries related to services and products.",
-    },
-    {
-      id: 3,
-      workTitle: "Restaurant Manager",
-      companyName: "SB Wings",
-      date: "July 2020 - September 2021",
-      shortDescription:
-        "Managed daily operations of the restaurant, including staff supervision, inventory control, and customer service.",
-    },
-    {
-      id: 4,
-      workTitle: "Production Staff",
-      companyName: "Hizon Laboratories",
-      date: "November 2016 - Semptember 2019",
-      shortDescription:
-        "Assisted in the production process, quality control, and packaging of laboratory products.",
-    },
-    {
-      id: 5,
-      workTitle: "Mc Donalds Kitchen Crew",
-      companyName: "Mc Donalds",
-      date: "May 2014 - June 2016",
-      shortDescription:
-        "Worked in the kitchen preparing food items, maintaining cleanliness, and ensuring adherence to health and safety standards.",
     },
   ],
 };
